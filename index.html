@@ -3,108 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Market Diner - Classic comfort food with fresh flavors. Family-owned diner serving fresh, made-to-order dishes. Call (206) 624-1234 to order!">
-    <meta name="keywords" content="diner, restaurant, comfort food, fresh ingredients, Seattle, breakfast, lunch, seafood">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Market Diner - Classic Comfort. Fresh Flavors.">
-    <meta property="og:description" content="Family-owned diner serving fresh, made-to-order comfort food. Open daily 9:00-5:00, closed Tuesdays.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.marketdiner.com">
-    <meta property="og:image" content="https://www.marketdiner.com/og-image.jpg">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Market Diner - Classic Comfort. Fresh Flavors.">
-    <meta name="twitter:description" content="Family-owned diner serving fresh, made-to-order comfort food.">
-    
-    <link rel="canonical" href="https://www.marketdiner.com">
-    <title>Market Diner - Classic Comfort. Fresh Flavors. | Seattle Restaurant</title>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Market Diner - Classic Comfort Food at Pike Place Market, Seattle</title>
+    <meta name="description" content="Experience classic American comfort food with fresh flavors at Market Diner in Pike Place Market, Seattle. Open 9AM-5PM daily except Tuesdays. Call (206) 624-1234.">
+    <meta name="keywords" content="diner, restaurant, Pike Place Market, Seattle, breakfast, lunch, seafood, comfort food">
+    <link rel="canonical" href="https://marketdiner.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "Restaurant",
-        "name": "Market Diner",
-        "description": "Family-owned diner serving fresh, made-to-order comfort food with classic American dishes.",
-        "telephone": "(206) 624-1234",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Seattle",
-            "addressRegion": "WA",
-            "addressCountry": "US"
-        },
-        "openingHours": [
-            "Mo 09:00-17:00",
-            "We 09:00-17:00", 
-            "Th 09:00-17:00",
-            "Fr 09:00-17:00",
-            "Sa 09:00-17:00",
-            "Su 09:00-17:00"
-        ],
-        "servesCuisine": "American",
-        "priceRange": "$"
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Market Diner",
+      "description": "Classic American comfort food with fresh flavors",
+      "telephone": "(206) 624-1234",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1514 Pike Pl",
+        "addressLocality": "Seattle",
+        "addressRegion": "WA",
+        "postalCode": "98101"
+      },
+      "openingHours": "Mo,We-Su 09:00-17:00",
+      "priceRange": "$",
+      "servesCuisine": "American"
     }
     </script>
-    
+
     <style>
-        /* CSS Variables & Base Styles */
         :root {
-            /* Diner Color Palette */
-            --background: 0 0% 98%;
-            --foreground: 220 13% 18%;
-            --card: 0 0% 100%;
-            --card-foreground: 220 13% 18%;
-            --popover: 0 0% 100%;
-            --popover-foreground: 220 13% 18%;
-            
-            /* Classic Diner Red */
-            --primary: 0 74% 58%;
-            --primary-foreground: 0 0% 98%;
-            --primary-hover: 0 74% 52%;
-            
-            /* Chrome Silver */
-            --secondary: 220 14% 96%;
-            --secondary-foreground: 220 13% 18%;
-            --chrome: 210 20% 85%;
-            --chrome-dark: 210 20% 75%;
-            
-            /* Warm Cream */
-            --cream: 45 29% 95%;
-            --cream-foreground: 220 13% 18%;
-            
-            --muted: 220 14% 96%;
-            --muted-foreground: 220 9% 46%;
-            --accent: 45 29% 95%;
-            --accent-foreground: 220 13% 18%;
-            --destructive: 0 84% 60%;
-            --destructive-foreground: 0 0% 98%;
-            --border: 220 13% 91%;
-            --input: 220 13% 91%;
-            --ring: 0 74% 58%;
-            --radius: 0.75rem;
-            
-            /* Diner Gradients */
-            --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-hover)));
-            --gradient-chrome: linear-gradient(145deg, hsl(var(--chrome)), hsl(var(--chrome-dark)));
-            --gradient-warm: linear-gradient(180deg, hsl(var(--cream)), hsl(var(--background)));
-            
-            /* Shadows */
-            --shadow-card: 0 4px 6px -1px hsl(var(--foreground) / 0.1), 0 2px 4px -1px hsl(var(--foreground) / 0.06);
-            --shadow-elevated: 0 10px 15px -3px hsl(var(--foreground) / 0.1), 0 4px 6px -2px hsl(var(--foreground) / 0.05);
-            --shadow-chrome: 0 2px 8px hsl(var(--chrome-dark) / 0.3);
-            
-            /* Typography */
-            --font-heading: 'Playfair Display', serif;
-            --font-body: 'Inter', sans-serif;
-            
-            /* Transitions */
-            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            --primary-color: #d73527;
+            --primary-dark: #b82921;
+            --secondary-color: #f4b942;
+            --accent-color: #2c5530;
+            --text-dark: #2d3748;
+            --text-light: #4a5568;
+            --bg-light: #f7fafc;
+            --bg-white: #ffffff;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --border-radius: 0.5rem;
+            --max-width: 1200px;
         }
 
         * {
@@ -114,275 +56,578 @@
         }
 
         body {
-            font-family: var(--font-body);
-            background-color: hsl(var(--background));
-            color: hsl(var(--foreground));
-            line-height: 1.5;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: var(--font-heading);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            scroll-behavior: smooth;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: var(--max-width);
             margin: 0 auto;
             padding: 0 1rem;
         }
 
-        /* Buttons */
-        .btn-hero {
-            background: var(--gradient-hero);
-            color: hsl(var(--primary-foreground));
-            font-weight: 500;
-            padding: 0.75rem 2rem;
-            border-radius: 0.75rem;
-            box-shadow: var(--shadow-elevated);
-            transition: var(--transition-smooth);
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn-hero:hover {
-            transform: scale(1.05);
-            box-shadow: var(--shadow-elevated);
-        }
-
-        .btn-outline-diner {
-            border: 2px solid hsl(var(--primary));
-            color: hsl(var(--primary));
-            background: transparent;
-            font-weight: 500;
-            padding: 0.625rem 1.5rem;
-            border-radius: 0.5rem;
-            transition: var(--transition-smooth);
-            text-decoration: none;
-            display: inline-block;
-            cursor: pointer;
-        }
-
-        .btn-outline-diner:hover {
-            background: hsl(var(--primary));
-            color: hsl(var(--primary-foreground));
-            transform: scale(1.05);
-        }
-
-        /* Cards */
-        .card-diner {
-            background: hsl(var(--card));
-            border-radius: 0.75rem;
-            box-shadow: var(--shadow-card);
-            transition: var(--transition-smooth);
-            border: 1px solid hsl(var(--border) / 0.5);
-        }
-
-        .card-diner:hover {
-            box-shadow: var(--shadow-elevated);
-            transform: translateY(-0.25rem);
-        }
-
-        .card-menu-item {
-            background: hsl(var(--card));
-            border-radius: 0.75rem;
-            box-shadow: var(--shadow-card);
-            transition: var(--transition-smooth);
-            border: 1px solid hsl(var(--border) / 0.5);
-            padding: 1rem;
-            cursor: pointer;
-            overflow: hidden;
-        }
-
-        .card-menu-item:hover {
-            box-shadow: var(--shadow-elevated);
-            transform: translateY(-0.25rem);
-        }
-
-        /* Top Bar */
+        /* Top Info Bar */
         .top-bar {
-            background: hsl(var(--primary));
-            color: hsl(var(--primary-foreground));
-            padding: 0.5rem 1rem;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem 0;
             font-size: 0.875rem;
-        }
-
-        /* Navigation */
-        .navigation {
             position: sticky;
             top: 0;
-            background: hsl(var(--background));
-            border-bottom: 1px solid hsl(var(--border));
-            z-index: 50;
+            z-index: 1001;
+        }
+
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .phone-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .phone-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background: var(--bg-white);
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: 2.5rem;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 1rem 0;
         }
 
-        .nav-link {
-            color: hsl(var(--foreground));
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
             text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            transition: var(--transition-smooth);
         }
 
-        .nav-link:hover {
-            background: hsl(var(--accent));
-            color: hsl(var(--primary));
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover,
+        .nav-links a:focus {
+            background: var(--bg-light);
+            color: var(--primary-color);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+            border: none;
+            background: none;
+            border-radius: var(--border-radius);
+        }
+
+        .hamburger:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--text-dark);
+            margin: 2px 0;
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
         }
 
         /* Hero Section */
         .hero {
-            background: var(--gradient-warm);
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 50%, var(--accent-color) 100%);
+            color: white;
             padding: 4rem 0;
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
 
-        .hero-pattern {
-            background-image: radial-gradient(circle at 25% 25%, hsl(var(--primary) / 0.1) 0%, transparent 50%),
-                             radial-gradient(circle at 75% 75%, hsl(var(--chrome) / 0.1) 0%, transparent 50%);
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.05"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero .tagline {
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+            border: 2px solid transparent;
+            cursor: pointer;
+            font-size: 1rem;
+            text-align: center;
+            min-width: 150px;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            background: var(--bg-light);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+
+        .btn-outline:hover,
+        .btn-outline:focus {
+            background: white;
+            color: var(--primary-color);
+            transform: translateY(-2px);
         }
 
         /* Menu Section */
         .menu-section {
             padding: 4rem 0;
+            background: var(--bg-white);
         }
 
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-dark);
+        }
+
+        .menu-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--bg-light);
+            border-radius: var(--border-radius);
+        }
+
+        .menu-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tab-btn {
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--border-color);
+            background: white;
+            color: var(--text-dark);
+            border-radius: 2rem;
+            cursor: pointer;
+            font-weight: 500;
+            transition: var(--transition);
+            white-space: nowrap;
+            font-size: 0.875rem;
+        }
+
+        .tab-btn.active,
+        .tab-btn:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .search-sort {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            min-width: 300px;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.75rem;
+            border: 2px solid var(--border-color);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(215, 53, 39, 0.1);
+        }
+
+        .sort-select {
+            padding: 0.75rem;
+            border: 2px solid var(--border-color);
+            border-radius: var(--border-radius);
+            background: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            min-width: 150px;
+        }
+
+        .sort-select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        /* Menu Grid */
         .menu-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 1.5rem;
             margin-top: 2rem;
         }
 
-        .category-tabs {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 0.5rem;
-            margin-bottom: 2rem;
+        .menu-item {
+            background: var(--bg-white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            opacity: 0;
+            transform: translateY(20px);
+            border: 2px solid transparent;
         }
 
-        .category-tab {
-            padding: 0.5rem 1rem;
-            border-radius: 9999px;
-            font-size: 0.875rem;
-            font-weight: 500;
-            transition: var(--transition-smooth);
-            border: none;
-            cursor: pointer;
+        .menu-item.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
-        .category-tab.active {
-            background: hsl(var(--primary));
-            color: hsl(var(--primary-foreground));
-            box-shadow: var(--shadow-elevated);
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
         }
 
-        .category-tab:not(.active) {
-            background: hsl(var(--secondary));
-            color: hsl(var(--secondary-foreground));
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: var(--transition);
         }
 
-        .category-tab:hover {
+        .menu-item:hover img {
             transform: scale(1.05);
         }
 
-        /* Form Styles */
-        .form-input, .form-select, .form-textarea {
+        .menu-item-content {
+            padding: 1.5rem;
+        }
+
+        .menu-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-item-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            flex: 1;
+            margin-right: 1rem;
+        }
+
+        .menu-item-price {
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 1.1rem;
+            white-space: nowrap;
+        }
+
+        .menu-item-description {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .menu-item-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-item-category {
+            background: var(--secondary-color);
+            color: var(--text-dark);
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .favorite-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: var(--transition);
+            color: var(--border-color);
+        }
+
+        .favorite-btn:hover,
+        .favorite-btn.active {
+            color: var(--primary-color);
+            transform: scale(1.2);
+        }
+
+        .favorite-btn:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 4rem 0;
+            background: var(--bg-light);
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 4rem 0;
+            background: var(--bg-white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-info {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+        }
+
+        .contact-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .contact-form {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .form-group input,
+        .form-group textarea {
             width: 100%;
-            padding: 0.75rem 1rem;
-            border: 1px solid hsl(var(--border));
-            border-radius: 0.5rem;
-            background: hsl(var(--background));
-            color: hsl(var(--foreground));
-            transition: var(--transition-smooth);
+            padding: 0.75rem;
+            border: 2px solid var(--border-color);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            font-family: inherit;
+            transition: var(--transition);
         }
 
-        .form-input:focus, .form-select:focus, .form-textarea:focus {
+        .form-group input:focus,
+        .form-group textarea:focus {
             outline: none;
-            border-color: hsl(var(--primary));
-            box-shadow: 0 0 0 2px hsl(var(--ring) / 0.2);
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(215, 53, 39, 0.1);
         }
 
-        /* Toast Notification */
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
         .toast {
             position: fixed;
-            top: 1rem;
+            top: 6rem;
             right: 1rem;
-            background: hsl(var(--card));
-            border: 1px solid hsl(var(--border));
-            border-radius: 0.5rem;
-            padding: 1rem;
-            box-shadow: var(--shadow-elevated);
-            z-index: 100;
-            max-width: 400px;
-            animation: slideIn 0.3s ease-out;
+            background: var(--accent-color);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lg);
+            z-index: 1002;
+            transform: translateX(100%);
+            transition: var(--transition);
         }
 
-        .toast.success {
-            border-color: hsl(120 100% 40%);
+        .toast.show {
+            transform: translateX(0);
         }
 
-        .toast.error {
-            border-color: hsl(var(--destructive));
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
         }
 
-        /* Mobile Menu */
-        .mobile-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: hsl(var(--background));
-            border: 1px solid hsl(var(--border));
-            border-radius: 0.5rem;
-            margin: 0.5rem;
-            box-shadow: var(--shadow-elevated);
-            animation: slideDown 0.3s ease-out;
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
 
-        .mobile-menu.show {
-            display: block;
+        .social-links {
+            display: flex;
+            gap: 1rem;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .desktop-nav {
-                display: none;
-            }
-            .mobile-toggle {
-                display: block;
-            }
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: var(--transition);
         }
 
-        @media (min-width: 769px) {
-            .desktop-nav {
-                display: flex;
-            }
-            .mobile-toggle {
-                display: none;
-            }
+        .social-links a:hover {
+            color: var(--secondary-color);
+            transform: scale(1.2);
         }
 
         /* Animations */
-        @keyframes slideIn {
+        @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateX(100%);
+                transform: translateY(30px);
             }
             to {
                 opacity: 1;
-                transform: translateX(0);
+                transform: translateY(0);
             }
         }
 
         @keyframes slideDown {
             from {
                 opacity: 0;
-                transform: translateY(-10px);
+                transform: translateY(-20px);
             }
             to {
                 opacity: 1;
@@ -390,140 +635,144 @@
             }
         }
 
-        @keyframes fadeInUp {
-            from {
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .top-bar-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 5.5rem;
+                left: 0;
+                right: 0;
+                background: var(--bg-white);
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: var(--shadow-lg);
+                transform: translateY(-100%);
                 opacity: 0;
-                transform: translateY(1rem);
+                transition: var(--transition);
+                z-index: 999;
             }
-            to {
-                opacity: 1;
+
+            .nav-links.active {
                 transform: translateY(0);
+                opacity: 1;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .menu-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-sort {
+                min-width: auto;
+                width: 100%;
+            }
+
+            .menu-tabs {
+                justify-content: center;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
             }
         }
 
-        /* Utility Classes */
-        .text-center { text-align: center; }
-        .text-left { text-align: left; }
-        .flex { display: flex; }
-        .flex-col { flex-direction: column; }
-        .items-center { align-items: center; }
-        .justify-between { justify-content: space-between; }
-        .justify-center { justify-content: center; }
-        .gap-2 { gap: 0.5rem; }
-        .gap-4 { gap: 1rem; }
-        .mb-2 { margin-bottom: 0.5rem; }
-        .mb-4 { margin-bottom: 1rem; }
-        .mb-8 { margin-bottom: 2rem; }
-        .mt-4 { margin-top: 1rem; }
-        .p-4 { padding: 1rem; }
-        .p-6 { padding: 1.5rem; }
-        .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
-        .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
-        .px-4 { padding-left: 1rem; padding-right: 1rem; }
-        .rounded-lg { border-radius: 0.5rem; }
-        .hidden { display: none; }
-        .block { display: block; }
-        .relative { position: relative; }
-        .absolute { position: absolute; }
-        .w-full { width: 100%; }
-        .h-48 { height: 12rem; }
-        .object-cover { object-fit: cover; }
-        .overflow-hidden { overflow: hidden; }
-        .cursor-pointer { cursor: pointer; }
-        .font-bold { font-weight: 700; }
-        .font-semibold { font-weight: 600; }
-        .font-medium { font-weight: 500; }
-        .text-sm { font-size: 0.875rem; }
-        .text-lg { font-size: 1.125rem; }
-        .text-xl { font-size: 1.25rem; }
-        .text-2xl { font-size: 1.5rem; }
-        .text-3xl { font-size: 1.875rem; }
-        .text-4xl { font-size: 2.25rem; }
+        /* Print Styles */
+        @media print {
+            .top-bar,
+            header,
+            .cta-buttons,
+            .menu-controls,
+            .contact-form,
+            footer {
+                display: none;
+            }
+            
+            body {
+                background: white;
+                color: black;
+            }
+        }
+
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* High Contrast Mode */
+        @media (prefers-contrast: high) {
+            :root {
+                --border-color: #000;
+                --text-light: var(--text-dark);
+            }
+        }
     </style>
 </head>
+
 <body>
-    <!-- Top Bar -->
+    <!-- Top Info Bar -->
     <div class="top-bar">
-        <div class="container flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <div class="flex items-center gap-2">
-                    <span>📞</span>
-                    <a href="tel:(206)624-1234" class="hover:underline font-medium">
-                        (206) 624-1234
-                    </a>
+        <div class="container">
+            <div class="top-bar-content">
+                <div>
+                    <a href="tel:+12066241234" class="phone-link" aria-label="Call Market Diner">📞 (206) 624-1234</a>
                 </div>
-                <span class="hidden sm:inline">|</span>
-                <div class="hidden sm:block">
-                    Hours: 9:00 – 5:00 • Closed on Tuesdays
-                </div>
-            </div>
-            <div class="text-sm hidden md:block">
-                Parties of 6 or more will be charged 15% gratuity
+                <div>⏰ 9:00 – 5:00 • Closed on Tuesdays</div>
+                <div>👥 Parties of 6 or more: 15% gratuity</div>
             </div>
         </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navigation">
-        <div class="container flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-primary">Market Diner</h1>
-            
-            <!-- Desktop Navigation -->
-            <div class="desktop-nav gap-6">
-                <a href="#home" class="nav-link" onclick="scrollToSection('home')">Home</a>
-                <a href="#menu" class="nav-link" onclick="scrollToSection('menu')">Menu</a>
-                <a href="#about" class="nav-link" onclick="scrollToSection('about')">About</a>
-                <a href="#contact" class="nav-link" onclick="scrollToSection('contact')">Contact</a>
-            </div>
-
-            <!-- Mobile Toggle -->
-            <button class="mobile-toggle" onclick="toggleMobileMenu()">
-                <span id="menu-icon">☰</span>
+    <!-- Header -->
+    <header id="home">
+        <nav class="container">
+            <a href="#home" class="logo" aria-label="Market Diner Home">Market Diner</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="mobile-menu">
-                <div class="p-4 flex flex-col gap-2">
-                    <a href="#home" class="nav-link" onclick="scrollToSection('home'); toggleMobileMenu()">Home</a>
-                    <a href="#menu" class="nav-link" onclick="scrollToSection('menu'); toggleMobileMenu()">Menu</a>
-                    <a href="#about" class="nav-link" onclick="scrollToSection('about'); toggleMobileMenu()">About</a>
-                    <a href="#contact" class="nav-link" onclick="scrollToSection('contact'); toggleMobileMenu()">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero hero-pattern">
+    <section class="hero">
         <div class="container">
-            <h1 class="text-4xl md:text-6xl font-bold text-foreground mb-4">Market Diner</h1>
-            <p class="text-xl md:text-2xl text-muted-foreground mb-8">Classic comfort. Fresh flavors.</p>
-            
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-                <button class="btn-hero" onclick="scrollToSection('menu')">
-                    <span>📋</span> View Menu
-                </button>
-                <a href="tel:(206)624-1234" class="btn-hero">
-                    <span>📞</span> Call to Order
-                </a>
-            </div>
-
-            <!-- Info Card -->
-            <div class="card-diner p-6 max-w-md mx-auto">
-                <h3 class="font-semibold text-lg mb-4 text-center">Visit Us Today</h3>
-                <div class="space-y-2 text-sm">
-                    <div class="flex items-center gap-2">
-                        <span>🕒</span>
-                        <span>Open daily 9:00 AM – 5:00 PM</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <span>📍</span>
-                        <span>Seattle, WA</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <span>📞</span>
-                        <a href="tel:(206)624-1234" class="text-primary hover:underline">(206) 624-1234</a>
-                    </div>
+            <div class="hero-content">
+                <h1>Market Diner</h1>
+                <p class="tagline">Classic comfort. Fresh flavors.</p>
+                <div class="cta-buttons">
+                    <a href="#menu" class="btn btn-primary">View Menu</a>
+                    <a href="tel:+12066241234" class="btn btn-outline">Call to Order</a>
                 </div>
             </div>
         </div>
@@ -532,629 +781,508 @@
     <!-- Menu Section -->
     <section id="menu" class="menu-section">
         <div class="container">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl md:text-5xl font-bold text-foreground mb-4">Our Menu</h2>
-                <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Fresh ingredients, classic recipes, and made-to-order dishes that bring comfort to every bite.
-                </p>
-            </div>
-
-            <!-- Search and Filters -->
-            <div class="mb-8 space-y-4">
-                <!-- Search Bar -->
-                <div class="relative max-w-md mx-auto">
-                    <input
-                        type="text"
-                        id="search-input"
-                        placeholder="Search menu items..."
-                        class="form-input pl-10"
-                        oninput="filterMenu()"
-                    />
-                    <span class="absolute left-3 top-1/2 transform -translate-y-1/2">🔍</span>
+            <h2 class="section-title">Our Menu</h2>
+            
+            <div class="menu-controls">
+                <div class="menu-tabs" id="menuTabs">
+                    <button class="tab-btn active" data-category="all">All</button>
+                    <button class="tab-btn" data-category="Appetizers">Appetizers</button>
+                    <button class="tab-btn" data-category="Soup / Salad">Soup & Salad</button>
+                    <button class="tab-btn" data-category="Breakfast">Breakfast</button>
+                    <button class="tab-btn" data-category="Lunch">Lunch</button>
+                    <button class="tab-btn" data-category="Seafood">Seafood</button>
+                    <button class="tab-btn" data-category="Salad Wraps">Salad Wraps</button>
+                    <button class="tab-btn" data-category="Drinks">Drinks</button>
                 </div>
-
-                <!-- Sort Dropdown -->
-                <div class="flex items-center justify-center gap-4">
-                    <div class="flex items-center gap-2">
-                        <span>⚙️</span>
-                        <select id="sort-select" class="form-select" onchange="filterMenu()">
-                            <option value="name">Sort by Name A-Z</option>
-                            <option value="price-low">Price: Low to High</option>
-                            <option value="price-high">Price: High to Low</option>
-                        </select>
-                    </div>
+                
+                <div class="search-sort">
+                    <input type="text" id="searchBox" class="search-box" placeholder="Search menu items...">
+                    <select id="sortSelect" class="sort-select">
+                        <option value="name-asc">Name A→Z</option>
+                        <option value="name-desc">Name Z→A</option>
+                        <option value="price-asc">Price: Low→High</option>
+                        <option value="price-desc">Price: High→Low</option>
+                    </select>
                 </div>
             </div>
 
-            <!-- Category Tabs -->
-            <div id="category-tabs" class="category-tabs">
-                <!-- Categories will be populated by JavaScript -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items will be generated by JavaScript -->
             </div>
-
-            <!-- Menu Items Grid -->
-            <div id="menu-grid" class="menu-grid">
-                <!-- Menu items will be populated by JavaScript -->
-            </div>
-
-            <!-- No results message -->
-            <div id="no-results" class="text-center py-12 hidden">
-                <p class="text-lg text-muted-foreground">
-                    No menu items found matching your search criteria.
-                </p>
-                <button class="btn-outline-diner mt-4" onclick="clearFilters()">
-                    Clear Filters
-                </button>
-            </div>
-
-            <!-- Menu Notes -->
-            <div class="mt-12 card-diner p-6" style="background: hsl(var(--cream));">
-                <h3 class="font-semibold text-lg mb-3">Menu Notes</h3>
-                <div class="grid md:grid-cols-2 gap-4 text-sm text-muted-foreground">
-                    <div>
-                        <p class="mb-2"><strong>Breakfast items</strong> are served with hash browns.</p>
-                        <p class="mb-2"><strong>*Eggs</strong> are served undercooked or cooked to order.</p>
-                        <p><strong>Lunch & Seafood</strong> served with choice of fries or Caesar salad.</p>
-                    </div>
-                    <div>
-                        <p class="mb-2"><strong>Salad dressings:</strong> Caesar, Blue Cheese, Ranch, Balsamic Vinegar</p>
-                        <p class="mb-2">Substitute beer-battered onion rings <strong>add $1.00</strong></p>
-                        <p>Substitute clam chowder <strong>add $1.50</strong></p>
-                    </div>
-                </div>
+            
+            <div class="no-results" id="noResults" style="display: none;">
+                <p>No items found. Try adjusting your search or filter.</p>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16" style="background: hsl(var(--cream));">
+    <section id="about" class="about-section">
         <div class="container">
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl md:text-5xl font-bold text-foreground mb-4">About Market Diner</h2>
-                    <p class="text-lg text-muted-foreground">Where classic comfort meets fresh flavors</p>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <p class="text-lg text-muted-foreground mb-6 leading-relaxed">
-                            Since our founding, Market Diner has been a cornerstone of the Seattle dining scene. We're a family-owned establishment that believes in the power of fresh ingredients and time-honored recipes to bring people together.
-                        </p>
-                        <p class="text-lg text-muted-foreground mb-6 leading-relaxed">
-                            Every dish that leaves our kitchen is prepared with care, using the finest local ingredients we can source. From our hearty breakfast classics to our fresh seafood specialties, we're committed to serving food that feels like home.
-                        </p>
-                        <p class="text-lg text-muted-foreground leading-relaxed">
-                            Whether you're grabbing a quick coffee or settling in for a leisurely meal with family, we strive to create a warm, welcoming atmosphere where memories are made over great food.
-                        </p>
-                    </div>
-
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="card-diner p-6 text-center">
-                            <div class="text-3xl font-bold text-primary mb-2">75+</div>
-                            <div class="text-sm text-muted-foreground">Menu Items</div>
-                        </div>
-                        <div class="card-diner p-6 text-center">
-                            <div class="text-3xl font-bold text-primary mb-2">Fresh</div>
-                            <div class="text-sm text-muted-foreground">Daily Ingredients</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Our Promise Card -->
-                <div class="card-diner p-8 mt-12">
-                    <h3 class="font-semibold text-2xl mb-4 text-primary text-center">Our Promise</h3>
-                    <p class="text-lg text-center text-muted-foreground leading-relaxed">
-                        We promise to serve you fresh, made-to-order meals in a friendly environment where you'll always feel welcome. 
-                        Your satisfaction is our priority, and we're here to make every visit memorable.
-                    </p>
-                </div>
+            <h2 class="section-title">About Market Diner</h2>
+            <div class="about-content">
+                <p>For over two decades, Market Diner has been a beloved fixture in Seattle's iconic Pike Place Market, serving up classic American comfort food with a commitment to fresh, quality ingredients.</p>
+                <p>Our family-owned diner takes pride in preparing everything to order, from our famous eggs benedict with fresh crab to our hearty burgers made with premium sirloin. We believe great food brings people together, and every dish is crafted with care to create memorable dining experiences.</p>
+                <p>Whether you're starting your day with our signature breakfast or enjoying a satisfying lunch after exploring the market, we're here to serve you authentic flavors that have made us a local favorite and visitor destination.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16">
+    <section id="contact" class="contact-section">
         <div class="container">
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl md:text-5xl font-bold text-foreground mb-4">Get in Touch</h2>
-                    <p class="text-lg text-muted-foreground">Ready to order or have questions? We'd love to hear from you!</p>
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><strong>Phone:</strong> <a href="tel:+12066241234" class="phone-link" style="color: var(--primary-color);">(206) 624-1234</a></p>
+                    <p><strong>Address:</strong> 1514 Pike Pl, Seattle, WA 98101<br>Pike Place Market</p>
+                    <p><strong>Hours:</strong><br>
+                        Monday, Wednesday - Sunday: 9:00 AM - 5:00 PM<br>
+                        Tuesday: Closed
+                    </p>
+                    <p><strong>Note:</strong> Parties of 6 or more will be charged 15% gratuity.</p>
                 </div>
-
-                <div class="grid md:grid-cols-2 gap-12">
-                    <!-- Contact Info -->
-                    <div class="space-y-8">
-                        <div>
-                            <h3 class="font-semibold text-2xl mb-6 text-primary">Contact Information</h3>
-                            
-                            <div class="space-y-4">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                                        <span class="text-primary">📞</span>
-                                    </div>
-                                    <div>
-                                        <p class="font-medium text-foreground">Call to Order</p>
-                                        <a href="tel:(206)624-1234" class="text-lg text-primary hover:underline font-semibold">
-                                            (206) 624-1234
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                                        <span class="text-primary">🕒</span>
-                                    </div>
-                                    <div>
-                                        <p class="font-medium text-foreground">Hours</p>
-                                        <p class="text-muted-foreground">
-                                            Open daily 9:00 AM – 5:00 PM<br />
-                                            <span class="text-destructive font-medium">Closed Tuesdays</span>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-start gap-4">
-                                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                                        <span class="text-primary">📍</span>
-                                    </div>
-                                    <div>
-                                        <p class="font-medium text-foreground">Location</p>
-                                        <p class="text-muted-foreground">Seattle, WA</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Important Notice -->
-                        <div class="card-diner p-6" style="background: hsl(var(--cream));">
-                            <h4 class="font-semibold text-lg mb-3 text-primary">Important Notice</h4>
-                            <p class="text-muted-foreground">
-                                Parties of 6 or more will be charged 15% gratuity. 
-                                We appreciate your understanding and look forward to serving you!
-                            </p>
-                        </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <h3>Send us a Message</h3>
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-
-                    <!-- Contact Form -->
-                    <div class="card-diner p-8">
-                        <h3 class="font-semibold text-2xl mb-6 text-primary">Send us a Message</h3>
-                        
-                        <form id="contact-form" class="space-y-4" onsubmit="handleFormSubmit(event)">
-                            <div>
-                                <label for="name" class="block text-sm font-medium text-foreground mb-2">Name *</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    class="form-input"
-                                    placeholder="Your full name"
-                                    required
-                                />
-                            </div>
-
-                            <div>
-                                <label for="phone" class="block text-sm font-medium text-foreground mb-2">Phone Number *</label>
-                                <input
-                                    type="tel"
-                                    id="phone"
-                                    name="phone"
-                                    class="form-input"
-                                    placeholder="(206) 123-4567"
-                                    required
-                                />
-                            </div>
-
-                            <div>
-                                <label for="message" class="block text-sm font-medium text-foreground mb-2">Message *</label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    rows="4"
-                                    class="form-textarea"
-                                    placeholder="Tell us about your inquiry, special requests, or feedback..."
-                                    required
-                                ></textarea>
-                            </div>
-
-                            <button type="submit" class="w-full btn-hero flex items-center justify-center gap-2">
-                                <span>📧</span>
-                                Send Message
-                            </button>
-                        </form>
-
-                        <p class="text-sm text-muted-foreground mt-4 text-center">
-                            * Required fields. This form is for inquiries only.
-                        </p>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12" style="background: hsl(var(--foreground)); color: hsl(var(--background));">
+    <footer>
         <div class="container">
-            <div class="grid md:grid-cols-4 gap-8">
-                <!-- Brand -->
+            <div class="footer-content">
                 <div>
-                    <h3 class="font-bold text-xl mb-4">Market Diner</h3>
-                    <p class="text-sm mb-4">Classic comfort food with fresh flavors, served with a smile since day one.</p>
-                    <div class="flex gap-4">
-                        <a href="#" class="hover:text-primary">📘</a>
-                        <a href="#" class="hover:text-primary">🐦</a>
-                        <a href="#" class="hover:text-primary">📸</a>
-                    </div>
+                    <p>&copy; <span id="currentYear"></span> Market Diner. All rights reserved.</p>
                 </div>
-
-                <!-- Quick Links -->
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                </div>
                 <div>
-                    <h4 class="font-semibold mb-4">Quick Links</h4>
-                    <div class="space-y-2 text-sm">
-                        <div><a href="#home" class="hover:text-primary" onclick="scrollToSection('home')">Home</a></div>
-                        <div><a href="#menu" class="hover:text-primary" onclick="scrollToSection('menu')">Menu</a></div>
-                        <div><a href="#about" class="hover:text-primary" onclick="scrollToSection('about')">About</a></div>
-                        <div><a href="#contact" class="hover:text-primary" onclick="scrollToSection('contact')">Contact</a></div>
-                    </div>
+                    <a href="#home" style="color: white; text-decoration: none;">Home</a> |
+                    <a href="#menu" style="color: white; text-decoration: none;">Menu</a> |
+                    <a href="#about" style="color: white; text-decoration: none;">About</a> |
+                    <a href="#contact" style="color: white; text-decoration: none;">Contact</a>
                 </div>
-
-                <!-- Contact -->
-                <div>
-                    <h4 class="font-semibold mb-4">Contact</h4>
-                    <div class="space-y-2 text-sm">
-                        <div>📞 <a href="tel:(206)624-1234" class="hover:text-primary">(206) 624-1234</a></div>
-                        <div>📍 Seattle, WA</div>
-                        <div>🕒 9:00 AM – 5:00 PM</div>
-                        <div>❌ Closed Tuesdays</div>
-                    </div>
-                </div>
-
-                <!-- Menu Categories -->
-                <div>
-                    <h4 class="font-semibold mb-4">Our Menu</h4>
-                    <div class="space-y-2 text-sm">
-                        <div>🥞 Breakfast</div>
-                        <div>🍔 Lunch</div>
-                        <div>🐟 Seafood</div>
-                        <div>🥗 Salads</div>
-                        <div>☕ Drinks</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-sm">&copy; <span id="current-year"></span> Market Diner. All rights reserved.</p>
-                <p class="text-xs mt-2 md:mt-0">Parties of 6 or more will be charged 15% gratuity</p>
             </div>
         </div>
     </footer>
 
-    <!-- Toast Container -->
-    <div id="toast-container"></div>
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
 
     <script>
         // Menu Data
         const menuData = [
             // Appetizers
-            { id: 'onion-rings', name: 'Onion Rings', price: '$7.50', description: 'Golden-crispy beer-battered onion rings served with tangy dipping sauce.', category: 'appetizers', imageUrl: 'https://images.unsplash.com/photo-1639024471283-03518883512d?w=400&h=300&fit=crop&auto=format' },
-            { id: 'seasoned-fries', name: 'Seasoned Fries', price: '$7.50', description: 'Hand-cut fries seasoned with our signature spice blend.', category: 'appetizers', imageUrl: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=300&fit=crop&auto=format' },
-            { id: 'fried-calamari', name: 'Fried Calamari', price: '$9.99', description: 'Tender calamari rings lightly breaded and fried to perfection.', category: 'appetizers', imageUrl: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop&auto=format' },
-            { id: 'clam-strips', name: 'Clam Strips', price: '$9.99', description: 'Fresh clam strips breaded and fried until golden brown.', category: 'appetizers', imageUrl: 'https://images.unsplash.com/photo-1551782450-17144efb9c50?w=400&h=300&fit=crop&auto=format' },
-            { id: 'prawn-skewers', name: 'Prawn Skewers', price: '$9.99', description: 'Grilled jumbo prawns on skewers with garlic herb seasoning.', category: 'appetizers', imageUrl: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=400&h=300&fit=crop&auto=format' },
-            { id: 'spicy-wings', name: 'Spicy Wings (6 pc)', price: '$9.99', description: 'Six crispy chicken wings tossed in our signature spicy sauce.', category: 'appetizers', imageUrl: 'https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=400&h=300&fit=crop&auto=format' },
-            { id: 'popcorn-shrimp', name: 'Popcorn Shrimp', price: '$9.99', description: 'Bite-sized shrimp coated in seasoned breading and fried crispy.', category: 'appetizers', imageUrl: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop&auto=format' },
+            { category: "Appetizers", name: "Onion Rings", price: 7.50, image: "https://images.unsplash.com/photo-1639024471283-03518883512d?w=400", description: "Golden crispy onion rings with a perfect crunch, served with our signature dipping sauce." },
+            { category: "Appetizers", name: "Seasoned Fries", price: 7.50, image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400", description: "Hand-cut fries seasoned with our special blend of herbs and spices." },
+            { category: "Appetizers", name: "Fried Calamari", price: 9.99, image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400", description: "Tender squid rings lightly battered and fried to golden perfection with marinara sauce." },
+            { category: "Appetizers", name: "Clam Strips", price: 9.99, image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400", description: "Fresh clam strips breaded and fried until golden, served with tartar sauce." },
+            { category: "Appetizers", name: "Prawn Skewers", price: 9.99, image: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400", description: "Succulent prawns grilled on skewers with herbs and served with garlic aioli." },
+            { category: "Appetizers", name: "Spicy Wings (6 pc)", price: 9.99, image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=400", description: "Six juicy chicken wings tossed in our house-made spicy buffalo sauce." },
+            { category: "Appetizers", name: "Popcorn Shrimp", price: 9.99, image: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400", description: "Bite-sized shrimp coated in seasoned breading and fried until crispy." },
             
-            // Soup & Salad
-            { id: 'clam-chowder', name: 'Clam Chowder', price: 'Cup $8.50 / Bowl $12.50', description: 'Rich and creamy New England-style clam chowder with tender clams.', category: 'soup-salad', imageUrl: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop&auto=format' },
-            { id: 'caesar-salad', name: 'Caesar Salad', price: 'Half $7.50 / Full $10.50', description: 'Crisp romaine lettuce tossed with parmesan, croutons and classic Caesar dressing.', category: 'soup-salad', imageUrl: 'https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&h=300&fit=crop&auto=format' },
-            { id: 'tossed-salad', name: 'Tossed Salad', price: 'Half $7.50 / Full $10.50', description: 'Fresh mixed greens with tomatoes, cucumbers and your choice of dressing.', category: 'soup-salad', imageUrl: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&h=300&fit=crop&auto=format' },
-            { id: 'grilled-chicken-salad', name: 'Grilled Chicken Salad', price: '$15.99', description: 'Mixed greens topped with seasoned grilled chicken breast and fresh vegetables.', category: 'soup-salad', imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop&auto=format' },
-            { id: 'prawn-skewer-salad', name: 'Prawn Skewer Salad', price: '$16.99', description: 'Garden fresh salad topped with our signature grilled prawn skewers.', category: 'soup-salad', imageUrl: 'https://images.unsplash.com/photo-1551248429-40975aa4de74?w=400&h=300&fit=crop&auto=format' },
-            { id: 'grilled-salmon-salad', name: 'Grilled Salmon Salad', price: '$19.99', description: 'Fresh mixed greens with perfectly grilled salmon fillet and seasonal vegetables.', category: 'soup-salad', imageUrl: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop&auto=format' },
-            { id: 'fresh-crabmeat-salad', name: 'Fresh Crabmeat Salad', price: '$24.99', description: 'Premium fresh crabmeat over mixed greens with avocado and citrus vinaigrette.', category: 'soup-salad', imageUrl: 'https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&h=300&fit=crop&auto=format' },
-            
+            // Soup / Salad
+            { category: "Soup / Salad", name: "Clam Chowder (Cup)", price: 8.50, image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400", description: "Rich and creamy New England-style chowder loaded with tender clams and potatoes." },
+            { category: "Soup / Salad", name: "Clam Chowder (Bowl)", price: 12.50, image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400", description: "Rich and creamy New England-style chowder loaded with tender clams and potatoes." },
+            { category: "Soup / Salad", name: "Caesar Salad (Half)", price: 7.50, image: "https://images.unsplash.com/photo-1551248429-40975aa4de74?w=400", description: "Crisp romaine lettuce tossed with Caesar dressing, parmesan cheese, and croutons." },
+            { category: "Soup / Salad", name: "Caesar Salad (Full)", price: 10.50, image: "https://images.unsplash.com/photo-1551248429-40975aa4de74?w=400", description: "Crisp romaine lettuce tossed with Caesar dressing, parmesan cheese, and croutons." },
+            { category: "Soup / Salad", name: "Tossed Salad (Half)", price: 7.50, image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400", description: "Fresh mixed greens with tomatoes, cucumbers, and your choice of dressing." },
+            { category: "Soup / Salad", name: "Tossed Salad (Full)", price: 10.50, image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400", description: "Fresh mixed greens with tomatoes, cucumbers, and your choice of dressing." },
+            { category: "Soup / Salad", name: "Grilled Chicken Salad", price: 15.99, image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400", description: "Tender grilled chicken breast over mixed greens with fresh vegetables and house dressing." },
+            { category: "Soup / Salad", name: "Prawn Skewer Salad", price: 16.99, image: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400", description: "Grilled prawns over fresh greens with avocado, cherry tomatoes, and citrus vinaigrette." },
+            { category: "Soup / Salad", name: "Grilled Salmon Salad", price: 19.99, image: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400", description: "Fresh Atlantic salmon grilled to perfection over mixed greens with seasonal vegetables." },
+            { category: "Soup / Salad", name: "Fresh Crabmeat Salad", price: 24.99, image: "https://images.unsplash.com/photo-1559847844-5315695dadae?w=400", description: "Premium fresh crab meat over mixed greens with avocado and our signature dressing." },
+
             // Breakfast
-            { id: 'eggs-benedict', name: 'Eggs Benedict', price: '$19.99', description: 'Poached eggs on English muffins with Canadian bacon and hollandaise sauce.', category: 'breakfast', imageUrl: 'https://images.unsplash.com/photo-1608039755401-742074f0548d?w=400&h=300&fit=crop&auto=format' },
-            { id: 'crab-eggs-benedict', name: 'Crab Eggs Benedict', price: '$24.99', description: 'Our classic Benedict elevated with fresh Dungeness crab meat.', category: 'breakfast', imageUrl: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=300&fit=crop&auto=format' },
-            { id: 'salmon-benedict', name: 'Salmon Benedict', price: '$21.99', description: 'Smoked salmon Benedict with capers and fresh dill hollandaise.', category: 'breakfast', imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=300&fit=crop&auto=format' },
-            { id: 'denver-omelette', name: 'Denver Omelette', price: '$18.99', description: 'Three-egg omelette with ham, bell peppers, onions and cheddar cheese.', category: 'breakfast', imageUrl: 'https://images.unsplash.com/photo-1525351159318-96d4ff580fb1?w=400&h=300&fit=crop&auto=format' },
-            { id: 'cheese-omelette', name: 'Cheese Omelette', price: '$15.99', description: 'Fluffy three-egg omelette filled with melted cheddar and Swiss cheese.', category: 'breakfast', imageUrl: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&h=300&fit=crop&auto=format' },
-            { id: 'crab-avocado-omelette', name: 'Crab Avocado Omelette', price: '$24.99', description: 'Fresh crabmeat and avocado omelette with herbs and cream cheese.', category: 'breakfast', imageUrl: 'https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=400&h=300&fit=crop&auto=format' },
-            { id: 'bacon-eggs', name: 'Bacon & Eggs', price: '$16.99', description: 'Two eggs any style with crispy bacon strips and toast.', category: 'breakfast', imageUrl: 'https://images.unsplash.com/photo-1525351326368-efbb5cb6077d?w=400&h=300&fit=crop&auto=format' },
-            { id: 'pancakes-eggs', name: 'Pancakes & Eggs', price: '$15.99', description: 'Stack of fluffy buttermilk pancakes with two eggs any style.', category: 'breakfast', imageUrl: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=300&fit=crop&auto=format' },
-            { id: 'french-toast-eggs', name: 'French Toast & Eggs', price: '$15.99', description: 'Golden French toast made with brioche bread and two eggs any style.', category: 'breakfast', imageUrl: 'https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400&h=300&fit=crop&auto=format' },
-            
-            // Breakfast Sides
-            { id: 'eggs-side', name: 'Eggs', price: '$7.50', description: 'Two fresh eggs cooked to your preference.', category: 'breakfast-sides', imageUrl: 'https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=400&h=300&fit=crop&auto=format' },
-            { id: 'bacon-sausage-ham', name: 'Bacon, Sausage or Ham', price: '$7.50', description: 'Your choice of crispy bacon, breakfast sausage, or honey ham.', category: 'breakfast-sides', imageUrl: 'https://images.unsplash.com/photo-1528607929212-2636ec44b319?w=400&h=300&fit=crop&auto=format' },
-            { id: 'hash-browns', name: 'Hash Browns', price: '$6.50', description: 'Golden crispy hash browns seasoned to perfection.', category: 'breakfast-sides', imageUrl: 'https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&h=300&fit=crop&auto=format' },
-            { id: 'pancakes-side', name: 'Pancakes', price: '$9.50', description: 'Stack of three fluffy buttermilk pancakes with syrup.', category: 'breakfast-sides', imageUrl: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop&auto=format' },
-            { id: 'french-toast-side', name: 'French Toast', price: '$9.50', description: 'Three thick slices of brioche French toast with powdered sugar.', category: 'breakfast-sides', imageUrl: 'https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=400&h=300&fit=crop&auto=format' },
-            
+            { category: "Breakfast", name: "Eggs Benedict", price: 19.99, image: "https://images.unsplash.com/photo-1508737804141-4c3b688e2546?w=400", description: "Traditional eggs benedict with Canadian bacon on English muffins, topped with hollandaise sauce." },
+            { category: "Breakfast", name: "Crab Eggs Benedict", price: 24.99, image: "https://images.unsplash.com/photo-1508737804141-4c3b688e2546?w=400", description: "Luxurious eggs benedict with fresh Dungeness crab and rich hollandaise sauce." },
+            { category: "Breakfast", name: "Salmon Benedict", price: 21.99, image: "https://images.unsplash.com/photo-1508737804141-4c3b688e2546?w=400", description: "Fresh smoked salmon benedict with poached eggs and creamy hollandaise sauce." },
+            { category: "Breakfast", name: "Denver Omelette", price: 18.99, image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400", description: "Fluffy three-egg omelette with ham, bell peppers, onions, and melted cheese." },
+            { category: "Breakfast", name: "Cheese Omelette", price: 15.99, image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400", description: "Classic three-egg omelette filled with your choice of melted cheese." },
+            { category: "Breakfast", name: "Crab Avocado Omelette", price: 24.99, image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400", description: "Gourmet omelette with fresh crab meat, avocado, and Swiss cheese." },
+            { category: "Breakfast", name: "Bacon & Eggs", price: 16.99, image: "https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=400", description: "Classic breakfast with two eggs your way, crispy bacon, and golden hash browns." },
+            { category: "Breakfast", name: "Pancakes & Eggs", price: 15.99, image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=400", description: "Fluffy buttermilk pancakes served with two eggs your way and maple syrup." },
+            { category: "Breakfast", name: "French Toast & Eggs", price: 15.99, image: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400", description: "Thick-cut French toast with cinnamon and two eggs your way." },
+            { category: "Breakfast", name: "Eggs", price: 7.50, image: "https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=400", description: "Two farm-fresh eggs cooked to your preference." },
+            { category: "Breakfast", name: "Bacon, sausage or ham", price: 7.50, image: "https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=400", description: "Your choice of crispy bacon, breakfast sausage, or ham steak." },
+            { category: "Breakfast", name: "Hash Browns", price: 6.50, image: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400", description: "Golden crispy hash browns seasoned to perfection." },
+            { category: "Breakfast", name: "Pancakes", price: 9.50, image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=400", description: "Stack of fluffy buttermilk pancakes served with butter and maple syrup." },
+            { category: "Breakfast", name: "French Toast", price: 9.50, image: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400", description: "Thick slices of challah bread dipped in custard and grilled golden." },
+
             // Lunch
-            { id: 'cheeseburger', name: 'Cheeseburger', price: '$15.99', description: 'Classic beef burger with American cheese, lettuce, tomato, and onion.', category: 'lunch', imageUrl: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop&auto=format' },
-            { id: 'bacon-cheeseburger', name: 'Bacon Cheeseburger', price: '$16.99', description: 'Our cheeseburger topped with crispy bacon for extra flavor.', category: 'lunch', imageUrl: 'https://images.unsplash.com/photo-1553979459-d2229ba7433a?w=400&h=300&fit=crop&auto=format' },
-            { id: 'swiss-mushroom-burger', name: 'Swiss Mushroom Burger', price: '$16.99', description: 'Beef burger with sautéed mushrooms and melted Swiss cheese.', category: 'lunch', imageUrl: 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop&auto=format' },
-            { id: 'ek-double-stack', name: 'EK Double Stack Burger', price: '$17.99', description: 'Double beef patties with cheese, special sauce, and all the fixings.', category: 'lunch', imageUrl: 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400&h=300&fit=crop&auto=format' },
-            { id: 'grilled-chicken-burger', name: 'Grilled Chicken Burger', price: '$15.99', description: 'Seasoned grilled chicken breast with lettuce, tomato, and mayo.', category: 'lunch', imageUrl: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?w=400&h=300&fit=crop&auto=format' },
-            { id: 'garden-burger', name: 'Garden Burger', price: '$14.99', description: 'House-made veggie patty with fresh vegetables and avocado.', category: 'lunch', imageUrl: 'https://images.unsplash.com/photo-1525059696034-4967a729002e?w=400&h=300&fit=crop&auto=format' },
-            { id: 'filet-o-fish', name: 'Filet O Fish Burger', price: '$15.99', description: 'Beer-battered fish fillet with tartar sauce and crisp lettuce.', category: 'lunch', imageUrl: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=300&fit=crop&auto=format' },
-            { id: 'teriyaki-salmon-burger', name: 'Teriyaki Salmon Burger', price: '$17.99', description: 'Grilled salmon fillet with teriyaki glaze and Asian slaw.', category: 'lunch', imageUrl: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop&auto=format' },
-            { id: 'bbq-roasted-beef', name: 'B.B.Q. Roasted Beef Burger', price: '$15.99', description: 'Slow-roasted beef with BBQ sauce, onions, and pickles.', category: 'lunch', imageUrl: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=300&fit=crop&auto=format' },
-            { id: 'chicken-club', name: 'Chicken Club Sandwich', price: '$16.99', description: 'Grilled chicken with bacon, lettuce, tomato, and mayo on toasted bread.', category: 'lunch', imageUrl: 'https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=400&h=300&fit=crop&auto=format' },
-            { id: 'philly-cheese-steak', name: 'Philly Cheese Steak', price: '$18.99', description: 'Sliced beef with peppers, onions, and melted cheese on a hoagie roll.', category: 'lunch', imageUrl: 'https://images.unsplash.com/photo-1585238341710-4d3d4d62d9d6?w=400&h=300&fit=crop&auto=format' },
-            { id: 'grilled-cheese', name: 'Grilled Cheese Sandwich', price: '$12.99', description: 'Classic grilled cheese with melted cheddar on buttered sourdough.', category: 'lunch', imageUrl: 'https://images.unsplash.com/photo-1528736235302-52922df5c122?w=400&h=300&fit=crop&auto=format' },
-            { id: 'blt-sandwich', name: 'BLT Sandwich', price: '$15.99', description: 'Crispy bacon, fresh lettuce, and tomato with mayo on toasted bread.', category: 'lunch', imageUrl: 'https://images.unsplash.com/photo-1553909489-cd47e0ef937f?w=400&h=300&fit=crop&auto=format' },
-            { id: 'chicken-fingers', name: 'Chicken Fingers', price: '$14.99', description: 'Hand-breaded chicken tenders served with honey mustard sauce.', category: 'lunch', imageUrl: 'https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop&auto=format' },
-            { id: 'french-dip', name: 'French Dip', price: '$17.99', description: 'Sliced roast beef on a French roll with au jus for dipping.', category: 'lunch', imageUrl: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?w=400&h=300&fit=crop&auto=format' },
-            
+            { category: "Lunch", name: "Cheeseburger", price: 15.99, image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400", description: "Third-pound sirloin patty with melted cheese, lettuce, tomato, and onion." },
+            { category: "Lunch", name: "Bacon Cheeseburger", price: 16.99, image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400", description: "Our classic cheeseburger topped with crispy bacon." },
+            { category: "Lunch", name: "Swiss Mushroom Burger", price: 16.99, image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400", description: "Sirloin burger with sautéed mushrooms and melted Swiss cheese." },
+            { category: "Lunch", name: "EK Double Stack Burger", price: 17.99, image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400", description: "Double sirloin patties with cheese, bacon, and all the fixings." },
+            { category: "Lunch", name: "Grilled Chicken Burger", price: 15.99, image: "https://images.unsplash.com/photo-1606755962773-d324e9a13086?w=400", description: "Marinated chicken breast grilled to perfection with lettuce and tomato." },
+            { category: "Lunch", name: "Garden Burger", price: 14.99, image: "https://images.unsplash.com/photo-1525059696034-4967a729002e?w=400", description: "House-made vegetarian patty with fresh vegetables and avocado." },
+            { category: "Lunch", name: "Filet O Fish Burger", price: 15.99, image: "https://images.unsplash.com/photo-1594736797933-d0cb6b55f3a0?w=400", description: "Beer-battered cod fillet with lettuce, tomato, and tartar sauce." },
+            { category: "Lunch", name: "Teriyaki Salmon Burger", price: 17.99, image: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400", description: "Fresh salmon fillet glazed with teriyaki sauce and grilled to perfection." },
+            { category: "Lunch", name: "B.B.Q. Roasted Beef Burger", price: 15.99, image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400", description: "Slow-roasted beef with tangy BBQ sauce and crispy onions." },
+            { category: "Lunch", name: "Chicken Club Sandwich", price: 16.99, image: "https://images.unsplash.com/photo-1553909489-cd47e0ef937f?w=400", description: "Grilled chicken with bacon, lettuce, tomato, and mayo on toasted bread." },
+            { category: "Lunch", name: "Philly Cheese Steak", price: 18.99, image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=400", description: "Thinly sliced beef with sautéed peppers, onions, and melted cheese." },
+            { category: "Lunch", name: "Grilled Cheese Sandwich", price: 12.99, image: "https://images.unsplash.com/photo-1528736235302-52922df5c122?w=400", description: "Classic grilled cheese with melted cheddar on buttery sourdough bread." },
+            { category: "Lunch", name: "BLT Sandwich", price: 15.99, image: "https://images.unsplash.com/photo-1553909489-cd47e0ef937f?w=400", description: "Crispy bacon, fresh lettuce, and ripe tomatoes with mayo on toast." },
+            { category: "Lunch", name: "Chicken Fingers", price: 14.99, image: "https://images.unsplash.com/photo-1562967914-608f82629710?w=400", description: "Tender chicken tenders breaded and fried golden, served with honey mustard." },
+            { category: "Lunch", name: "French Dip", price: 17.99, image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400", description: "Sliced roast beef on a French roll served with au jus for dipping." },
+
             // Seafood
-            { id: 'fish-chips', name: 'Fish & Chips', price: '$15.99', description: 'Beer-battered cod with crispy fries and tartar sauce.', category: 'seafood', imageUrl: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=300&fit=crop&auto=format' },
-            { id: 'shrimps-chips', name: 'Shrimps & Chips', price: '$15.99', description: 'Battered jumbo shrimp with seasoned fries and cocktail sauce.', category: 'seafood', imageUrl: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=400&h=300&fit=crop&auto=format' },
-            { id: 'salmon-chips', name: 'Salmon & Chips', price: '$16.99', description: 'Grilled salmon fillet with crispy fries and lemon wedge.', category: 'seafood', imageUrl: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop&auto=format' },
-            { id: 'fried-oysters-chips', name: 'Fried Oysters & Chips', price: '$16.99', description: 'Fresh oysters breaded and fried golden with seasoned fries.', category: 'seafood', imageUrl: 'https://images.unsplash.com/photo-1551782450-17144efb9c50?w=400&h=300&fit=crop&auto=format' },
-            { id: 'seafood-combo', name: 'Seafood Combo', price: '$19.99', description: 'Fish, shrimp, and calamari with fries - the best of all worlds.', category: 'seafood', imageUrl: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop&auto=format' },
-            { id: 'salmon-blt', name: 'Salmon BLT', price: '$19.99', description: 'Grilled salmon with bacon, lettuce, and tomato on artisan bread.', category: 'seafood', imageUrl: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop&auto=format' },
-            { id: 'crab-sandwich', name: 'Crab Sandwich', price: '$24.99', description: 'Fresh Dungeness crab meat with lettuce and lemon aioli.', category: 'seafood', imageUrl: 'https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&h=300&fit=crop&auto=format' },
-            
+            { category: "Seafood", name: "Fish & Chips", price: 15.99, image: "https://images.unsplash.com/photo-1544982503-9f984c14501a?w=400", description: "Beer-battered cod with crispy fries and coleslaw, served with tartar sauce." },
+            { category: "Seafood", name: "Shrimps & Chips", price: 15.99, image: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400", description: "Golden fried shrimp with crispy fries and coleslaw." },
+            { category: "Seafood", name: "Salmon & Chips", price: 16.99, image: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400", description: "Fresh Pacific salmon grilled or fried, served with fries and coleslaw." },
+            { category: "Seafood", name: "Fried Oysters & Chips", price: 16.99, image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400", description: "Fresh oysters breaded and fried golden, served with fries and coleslaw." },
+            { category: "Seafood", name: "Seafood Combo", price: 19.99, image: "https://images.unsplash.com/photo-1544982503-9f984c14501a?w=400", description: "A generous portion of fish, shrimp, and calamari with fries and coleslaw." },
+            { category: "Seafood", name: "Salmon BLT", price: 19.99, image: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400", description: "Grilled salmon with bacon, lettuce, and tomato on toasted sourdough." },
+            { category: "Seafood", name: "Crab Sandwich", price: 24.99, image: "https://images.unsplash.com/photo-1559847844-5315695dadae?w=400", description: "Fresh Dungeness crab salad on toasted sourdough with lettuce and tomato." },
+
             // Salad Wraps
-            { id: 'grilled-salmon-wrap', name: 'Grilled Salmon Wrap', price: '$17.99', description: 'Grilled salmon with mixed greens and cucumber in a spinach wrap.', category: 'salad-wraps', imageUrl: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=400&h=300&fit=crop&auto=format' },
-            { id: 'grilled-prawn-wrap', name: 'Grilled Prawn Wrap', price: '$17.99', description: 'Seasoned grilled prawns with fresh vegetables in a flour tortilla.', category: 'salad-wraps', imageUrl: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=400&h=300&fit=crop&auto=format' },
-            { id: 'grilled-chicken-wrap', name: 'Grilled Chicken Wrap', price: '$16.99', description: 'Grilled chicken breast with lettuce, tomato, and ranch dressing.', category: 'salad-wraps', imageUrl: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?w=400&h=300&fit=crop&auto=format' },
-            { id: 'teriyaki-beef-wrap', name: 'Teriyaki Beef Wrap', price: '$17.99', description: 'Tender teriyaki beef with crisp vegetables in a warm tortilla.', category: 'salad-wraps', imageUrl: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=300&fit=crop&auto=format' },
-            
+            { category: "Salad Wraps", name: "Grilled Salmon Wrap", price: 17.99, image: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=400", description: "Fresh grilled salmon with mixed greens, tomatoes, and avocado in a flour tortilla." },
+            { category: "Salad Wraps", name: "Grilled Prawn Wrap", price: 17.99, image: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=400", description: "Grilled prawns with crisp lettuce, tomatoes, and garlic aioli wrapped in a tortilla." },
+            { category: "Salad Wraps", name: "Grilled Chicken Wrap", price: 16.99, image: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=400", description: "Tender grilled chicken with fresh vegetables and ranch dressing in a soft tortilla." },
+            { category: "Salad Wraps", name: "Teriyaki Beef Wrap", price: 17.99, image: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=400", description: "Marinated beef with vegetables and teriyaki glaze wrapped in a flour tortilla." },
+
             // Drinks
-            { id: 'coffee-tea', name: 'Coffee / Hot Tea', price: '$3.50', description: 'Freshly brewed coffee or selection of hot teas.', category: 'drinks', imageUrl: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop&auto=format' },
-            { id: 'hot-cocoa', name: 'Hot Cocoa', price: '$4.50', description: 'Rich hot chocolate topped with whipped cream.', category: 'drinks', imageUrl: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=300&fit=crop&auto=format' },
-            { id: 'bottled-water', name: 'Bottled Water', price: '$1.99', description: 'Refreshing bottled spring water.', category: 'drinks', imageUrl: 'https://images.unsplash.com/photo-1550572017-edd951aa8ca5?w=400&h=300&fit=crop&auto=format' },
-            { id: 'soda', name: 'Soda', price: '$3.50', description: 'Choice of Coke, Pepsi, Sprite, or other soft drinks.', category: 'drinks', imageUrl: 'https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=300&fit=crop&auto=format' },
-            { id: 'italian-soda', name: 'Italian Soda', price: '$6.50', description: 'Sparkling flavored soda with your choice of syrup.', category: 'drinks', imageUrl: 'https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop&auto=format' },
-            { id: 'iced-tea-lemonade', name: 'Iced Tea / Lemonade', price: '$5.50', description: 'Refreshing iced tea or fresh-squeezed lemonade.', category: 'drinks', imageUrl: 'https://images.unsplash.com/photo-1556881286-12c5d99bbe9d?w=400&h=300&fit=crop&auto=format' },
-            { id: 'orange-apple-juice', name: 'Orange / Apple Juice', price: '$3.50', description: 'Fresh orange or apple juice.', category: 'drinks', imageUrl: 'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400&h=300&fit=crop&auto=format' },
-            { id: 'cranberry-juice', name: 'Cranberry Juice', price: '$3.50', description: 'Tart and refreshing cranberry juice.', category: 'drinks', imageUrl: 'https://images.unsplash.com/photo-1571741140674-4b3c99ff3d92?w=400&h=300&fit=crop&auto=format' },
-            { id: 'milk-shake-float', name: 'Milk Shake / Float', price: '$8.50', description: 'Creamy milkshake or root beer float with ice cream.', category: 'drinks', imageUrl: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop&auto=format' },
-            { id: 'milk-chocolate-milk', name: 'Milk / Chocolate Milk', price: '$4.50', description: 'Fresh whole milk or rich chocolate milk.', category: 'drinks', imageUrl: 'https://images.unsplash.com/photo-1553909489-cd47e0ef937f?w=400&h=300&fit=crop&auto=format' },
-            { id: 'iced-coffee', name: 'Iced Coffee', price: '$5.50', description: 'Cold brew coffee served over ice.', category: 'drinks', imageUrl: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop&auto=format' },
-            { id: 'affogato', name: 'Affogato', price: '$8.50', description: 'Vanilla ice cream "drowned" in hot espresso.', category: 'drinks', imageUrl: 'https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=400&h=300&fit=crop&auto=format' }
+            { category: "Drinks", name: "Coffee / Hot Tea", price: 3.50, image: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400", description: "Freshly brewed coffee or selection of premium teas." },
+            { category: "Drinks", name: "Hot Cocoa", price: 4.50, image: "https://images.unsplash.com/photo-1542990253-a3f87d5c8e35?w=400", description: "Rich and creamy hot chocolate topped with whipped cream." },
+            { category: "Drinks", name: "Bottled Water", price: 1.99, image: "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400", description: "Premium bottled spring water." },
+            { category: "Drinks", name: "Soda", price: 3.50, image: "https://images.unsplash.com/photo-1610889556528-9a770e32642f?w=400", description: "Choice of Coca-Cola, Pepsi, Sprite, or other fountain drinks." },
+            { category: "Drinks", name: "Italian Soda", price: 6.50, image: "https://images.unsplash.com/photo-1610889556528-9a770e32642f?w=400", description: "Sparkling water with flavored syrup and whipped cream." },
+            { category: "Drinks", name: "Iced Tea / Lemonade", price: 5.50, image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400", description: "Refreshing iced tea or fresh-squeezed lemonade." },
+            { category: "Drinks", name: "Orange / Apple Juice", price: 3.50, image: "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400", description: "Fresh-squeezed orange juice or crisp apple juice." },
+            { category: "Drinks", name: "Cranberry Juice", price: 3.50, image: "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?w=400", description: "Tart and refreshing cranberry juice." },
+            { category: "Drinks", name: "Milk Shake / Float", price: 8.50, image: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400", description: "Thick and creamy milkshake or classic root beer float." },
+            { category: "Drinks", name: "Milk / Chocolate Milk", price: 4.50, image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400", description: "Fresh whole milk or rich chocolate milk." },
+            { category: "Drinks", name: "Iced Coffee", price: 5.50, image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400", description: "Cold-brewed coffee served over ice with cream and sugar." },
+            { category: "Drinks", name: "Affogato", price: 8.50, image: "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400", description: "Vanilla gelato 'drowned' with a shot of hot espresso." }
         ];
 
-        // Categories with counts
-        const categories = [
-            { id: 'all', name: 'All', count: menuData.length },
-            { id: 'appetizers', name: 'Appetizers', count: menuData.filter(item => item.category === 'appetizers').length },
-            { id: 'soup-salad', name: 'Soup & Salad', count: menuData.filter(item => item.category === 'soup-salad').length },
-            { id: 'breakfast', name: 'Breakfast', count: menuData.filter(item => item.category === 'breakfast').length },
-            { id: 'breakfast-sides', name: 'Breakfast Sides', count: menuData.filter(item => item.category === 'breakfast-sides').length },
-            { id: 'lunch', name: 'Lunch', count: menuData.filter(item => item.category === 'lunch').length },
-            { id: 'seafood', name: 'Seafood', count: menuData.filter(item => item.category === 'seafood').length },
-            { id: 'salad-wraps', name: 'Salad Wraps', count: menuData.filter(item => item.category === 'salad-wraps').length },
-            { id: 'drinks', name: 'Drinks', count: menuData.filter(item => item.category === 'drinks').length }
-        ];
+        // Application State
+        let currentCategory = 'all';
+        let currentSort = 'name-asc';
+        let searchQuery = '';
+        let favorites = JSON.parse(localStorage.getItem('marketDinerFavorites') || '[]');
 
-        // State variables
-        let selectedCategory = 'all';
-        let searchTerm = '';
-        let sortBy = 'name';
-        let favorites = JSON.parse(localStorage.getItem('diner-favorites') || '[]');
-        let mobileMenuOpen = false;
+        // DOM Elements
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const menuTabs = document.getElementById('menuTabs');
+        const searchBox = document.getElementById('searchBox');
+        const sortSelect = document.getElementById('sortSelect');
+        const menuGrid = document.getElementById('menuGrid');
+        const noResults = document.getElementById('noResults');
+        const contactForm = document.getElementById('contactForm');
+        const toast = document.getElementById('toast');
 
-        // Utility Functions
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
+        // Initialize App
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeApp();
+        });
+
+        function initializeApp() {
+            // Set current year
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            
+            // Setup event listeners
+            setupEventListeners();
+            
+            // Initial render
+            renderMenu();
+            
+            // Setup intersection observer for animations
+            setupIntersectionObserver();
+        }
+
+        function setupEventListeners() {
+            // Mobile Navigation
+            hamburger.addEventListener('click', toggleMobileNav);
+            
+            // Menu Controls
+            menuTabs.addEventListener('click', handleTabClick);
+            searchBox.addEventListener('input', handleSearch);
+            sortSelect.addEventListener('change', handleSort);
+            
+            // Contact Form
+            contactForm.addEventListener('submit', handleContactForm);
+            
+            // Smooth scrolling for nav links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const headerHeight = 130; // Account for fixed headers
+                        const targetPosition = target.offsetTop - headerHeight;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                    // Close mobile menu if open
+                    navLinks.classList.remove('active');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        function toggleMobileNav() {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            const isExpanded = hamburger.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', isExpanded);
+        }
+
+        function handleTabClick(e) {
+            if (e.target.classList.contains('tab-btn')) {
+                // Update active tab
+                document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+                
+                // Update category
+                currentCategory = e.target.dataset.category;
+                renderMenu();
             }
         }
 
-        function toggleMobileMenu() {
-            mobileMenuOpen = !mobileMenuOpen;
-            const mobileMenu = document.getElementById('mobile-menu');
-            const menuIcon = document.getElementById('menu-icon');
+        function handleSearch(e) {
+            searchQuery = e.target.value.toLowerCase();
+            renderMenu();
+        }
+
+        function handleSort(e) {
+            currentSort = e.target.value;
+            renderMenu();
+        }
+
+        function filterAndSortMenu() {
+            let filteredMenu = [...menuData];
             
-            if (mobileMenuOpen) {
-                mobileMenu.classList.add('show');
-                menuIcon.innerHTML = '✕';
-            } else {
-                mobileMenu.classList.remove('show');
-                menuIcon.innerHTML = '☰';
-            }
-        }
-
-        function showToast(title, description, type = 'success') {
-            const container = document.getElementById('toast-container');
-            const toast = document.createElement('div');
-            toast.className = `toast ${type}`;
-            toast.innerHTML = `
-                <div>
-                    <h4 class="font-semibold">${title}</h4>
-                    <p class="text-sm text-muted-foreground">${description}</p>
-                </div>
-            `;
-            
-            container.appendChild(toast);
-            
-            // Remove toast after 4 seconds
-            setTimeout(() => {
-                toast.remove();
-            }, 4000);
-        }
-
-        // Menu Functions
-        function toggleFavorite(itemId) {
-            if (favorites.includes(itemId)) {
-                favorites = favorites.filter(id => id !== itemId);
-            } else {
-                favorites.push(itemId);
-            }
-            localStorage.setItem('diner-favorites', JSON.stringify(favorites));
-            renderMenuItems();
-        }
-
-        function filterMenu() {
-            searchTerm = document.getElementById('search-input').value;
-            sortBy = document.getElementById('sort-select').value;
-            renderMenuItems();
-        }
-
-        function setCategory(categoryId) {
-            selectedCategory = categoryId;
-            renderCategoryTabs();
-            renderMenuItems();
-        }
-
-        function clearFilters() {
-            selectedCategory = 'all';
-            searchTerm = '';
-            sortBy = 'name';
-            document.getElementById('search-input').value = '';
-            document.getElementById('sort-select').value = 'name';
-            renderCategoryTabs();
-            renderMenuItems();
-        }
-
-        function getFilteredAndSortedItems() {
-            let filtered = menuData;
-
             // Filter by category
-            if (selectedCategory !== 'all') {
-                filtered = filtered.filter(item => item.category === selectedCategory);
+            if (currentCategory !== 'all') {
+                filteredMenu = filteredMenu.filter(item => item.category === currentCategory);
             }
-
-            // Filter by search term
-            if (searchTerm) {
-                filtered = filtered.filter(item =>
-                    item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                    item.description.toLowerCase().includes(searchTerm.toLowerCase())
+            
+            // Filter by search query
+            if (searchQuery) {
+                filteredMenu = filteredMenu.filter(item => 
+                    item.name.toLowerCase().includes(searchQuery) ||
+                    item.description.toLowerCase().includes(searchQuery)
                 );
             }
-
-            // Sort items
-            filtered.sort((a, b) => {
-                switch (sortBy) {
-                    case 'price-low':
-                        return parseFloat(a.price.replace(/[^0-9.]/g, '')) - parseFloat(b.price.replace(/[^0-9.]/g, ''));
-                    case 'price-high':
-                        return parseFloat(b.price.replace(/[^0-9.]/g, '')) - parseFloat(a.price.replace(/[^0-9.]/g, ''));
-                    case 'name':
-                    default:
+            
+            // Sort menu
+            filteredMenu.sort((a, b) => {
+                switch (currentSort) {
+                    case 'name-asc':
                         return a.name.localeCompare(b.name);
+                    case 'name-desc':
+                        return b.name.localeCompare(a.name);
+                    case 'price-asc':
+                        return a.price - b.price;
+                    case 'price-desc':
+                        return b.price - a.price;
+                    default:
+                        return 0;
                 }
             });
-
-            return filtered;
+            
+            return filteredMenu;
         }
 
-        function renderCategoryTabs() {
-            const container = document.getElementById('category-tabs');
-            container.innerHTML = categories.map(category => `
-                <button 
-                    class="category-tab ${selectedCategory === category.id ? 'active' : ''}"
-                    onclick="setCategory('${category.id}')"
-                >
-                    ${category.name} (${category.count})
-                </button>
-            `).join('');
-        }
-
-        function renderMenuItems() {
-            const items = getFilteredAndSortedItems();
-            const container = document.getElementById('menu-grid');
-            const noResults = document.getElementById('no-results');
-
-            if (items.length === 0) {
-                container.classList.add('hidden');
-                noResults.classList.remove('hidden');
+        function renderMenu() {
+            const filteredMenu = filterAndSortMenu();
+            
+            if (filteredMenu.length === 0) {
+                menuGrid.style.display = 'none';
+                noResults.style.display = 'block';
                 return;
             }
-
-            container.classList.remove('hidden');
-            noResults.classList.add('hidden');
-
-            container.innerHTML = items.map(item => `
-                <div class="card-menu-item group">
-                    <div class="relative h-48 mb-4 bg-muted rounded-lg overflow-hidden">
-                        <img
-                            src="${item.imageUrl}"
-                            alt="${item.name}"
-                            loading="lazy"
-                            class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105"
-                            onerror="this.parentElement.innerHTML='<div class=\\\"w-full h-full flex items-center justify-center bg-muted text-muted-foreground\\\"><div class=\\\"text-center\\\"><div class=\\\"text-3xl mb-2\\\">🍽️</div><p class=\\\"text-sm\\\">Image unavailable</p></div></div>'"
-                        />
-                        
-                        <button
-                            onclick="toggleFavorite('${item.id}')"
-                            class="absolute top-3 right-3 p-2 rounded-full shadow-lg transition-all hover:scale-110 ${
-                                favorites.includes(item.id) 
-                                    ? 'bg-primary text-primary-foreground' 
-                                    : 'bg-card/90 text-muted-foreground hover:text-primary'
-                            }"
-                            aria-label="${favorites.includes(item.id) ? 'Remove from favorites' : 'Add to favorites'}"
-                        >
-                            ${favorites.includes(item.id) ? '❤️' : '🤍'}
-                        </button>
-                    </div>
-
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
-                                ${item.name}
-                            </h3>
-                            <span class="text-lg font-bold text-primary ml-2 flex-shrink-0">
-                                ${item.price}
-                            </span>
-                        </div>
-                        <p class="text-sm text-muted-foreground leading-relaxed">
-                            ${item.description}
-                        </p>
-                    </div>
-                </div>
-            `).join('');
+            
+            menuGrid.style.display = 'grid';
+            noResults.style.display = 'none';
+            
+            menuGrid.innerHTML = filteredMenu.map(item => createMenuItemHTML(item)).join('');
+            
+            // Setup lazy loading and favorites
+            setupLazyLoading();
+            setupFavorites();
         }
 
-        // Contact Form
-        function handleFormSubmit(event) {
-            event.preventDefault();
+        function createMenuItemHTML(item) {
+            const isFavorite = favorites.includes(item.name);
+            const formattedPrice = item.price.toFixed(2);
             
-            const formData = new FormData(event.target);
+            return `
+                <div class="menu-item" data-category="${item.category}">
+                    <img src="${item.image}" alt="${item.name}" loading="lazy" width="400" height="200">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">${item.name}</h3>
+                            <span class="menu-item-price">$${formattedPrice}</span>
+                        </div>
+                        <p class="menu-item-description">${item.description}</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-category">${item.category}</span>
+                            <button class="favorite-btn ${isFavorite ? 'active' : ''}" 
+                                    data-item="${item.name}" 
+                                    aria-label="${isFavorite ? 'Remove from' : 'Add to'} favorites"
+                                    title="${isFavorite ? 'Remove from' : 'Add to'} favorites">
+                                ${isFavorite ? '❤️' : '🤍'}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function setupLazyLoading() {
+            const images = document.querySelectorAll('.menu-item img[loading="lazy"]');
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.src; // Trigger loading
+                        observer.unobserve(img);
+                    }
+                });
+            });
+            
+            images.forEach(img => imageObserver.observe(img));
+        }
+
+        function setupFavorites() {
+            const favoriteButtons = document.querySelectorAll('.favorite-btn');
+            favoriteButtons.forEach(btn => {
+                btn.addEventListener('click', toggleFavorite);
+            });
+        }
+
+        function toggleFavorite(e) {
+            const itemName = e.target.dataset.item;
+            const isFavorite = favorites.includes(itemName);
+            
+            if (isFavorite) {
+                favorites = favorites.filter(name => name !== itemName);
+                e.target.textContent = '🤍';
+                e.target.classList.remove('active');
+                e.target.setAttribute('aria-label', 'Add to favorites');
+                e.target.setAttribute('title', 'Add to favorites');
+            } else {
+                favorites.push(itemName);
+                e.target.textContent = '❤️';
+                e.target.classList.add('active');
+                e.target.setAttribute('aria-label', 'Remove from favorites');
+                e.target.setAttribute('title', 'Remove from favorites');
+            }
+            
+            localStorage.setItem('marketDinerFavorites', JSON.stringify(favorites));
+        }
+
+        function setupIntersectionObserver() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            // Observe menu items for animations
+            const observeMenuItems = () => {
+                const menuItems = document.querySelectorAll('.menu-item:not(.visible)');
+                menuItems.forEach((item, index) => {
+                    item.style.transitionDelay = `${index * 0.1}s`;
+                    observer.observe(item);
+                });
+            };
+
+            // Initial observation
+            setTimeout(observeMenuItems, 100);
+            
+            // Re-observe when menu changes
+            const originalRenderMenu = renderMenu;
+            renderMenu = function() {
+                originalRenderMenu.call(this);
+                setTimeout(observeMenuItems, 100);
+            };
+        }
+
+        function handleContactForm(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
             const name = formData.get('name');
             const phone = formData.get('phone');
             const message = formData.get('message');
-
-            // Validation
-            if (!name.trim()) {
-                showToast('Name required', 'Please enter your name.', 'error');
-                return;
-            }
-            if (!phone.trim()) {
-                showToast('Phone required', 'Please enter your phone number.', 'error');
-                return;
-            }
-            if (!message.trim()) {
-                showToast('Message required', 'Please enter a message.', 'error');
-                return;
-            }
-
-            // Success
-            showToast('Message sent!', `Thanks ${name}! We'll get back to you soon.`);
             
-            // Reset form
-            event.target.reset();
+            // Basic validation
+            if (!name.trim() || !message.trim()) {
+                showToast('Please fill in all required fields.', 'error');
+                return;
+            }
+            
+            // Simulate form submission
+            setTimeout(() => {
+                showToast(`Thanks ${name}! Your message has been received. We'll get back to you soon!`, 'success');
+                e.target.reset();
+            }, 500);
         }
 
-        // Initialize everything when the page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            // Set current year in footer
-            document.getElementById('current-year').textContent = new Date().getFullYear();
+        function showToast(message, type = 'success') {
+            toast.textContent = message;
+            toast.className = `toast show ${type}`;
             
-            // Initialize menu
-            renderCategoryTabs();
-            renderMenuItems();
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 4000);
+        }
+
+        // Keyboard navigation for accessibility
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                // Close mobile menu
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            }
         });
 
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const nav = event.target.closest('nav');
-            if (!nav && mobileMenuOpen) {
-                toggleMobileMenu();
+        // Handle header scroll behavior
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 200) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
             }
+            lastScrollTop = scrollTop;
         });
     </script>
 </body>
